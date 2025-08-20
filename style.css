@@ -1,0 +1,357 @@
+/* Reset & Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8f9fa;
+}
+
+a {
+  text-decoration: none;
+  color: #0a66c2;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #004187;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 600;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 5%;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0a66c2;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  font-weight: 500;
+  font-size: 1.05rem;
+}
+
+.nav-links a:hover {
+  color: #004187;
+}
+
+/* Hero Section */
+.hero {
+  padding: 6rem 5% 4rem;
+  text-align: center;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  color: white;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+}
+
+.btn {
+  display: inline-block;
+  background: #fff;
+  color: #0a66c2;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: transform 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.hero-img {
+  margin-top: 2rem;
+}
+
+.hero-img img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 4px solid white;
+  object-fit: cover;
+}
+
+/* Section Styling */
+section {
+  padding: 4rem 5%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #111;
+}
+
+/* Tentang Saya */
+#tentang {
+  background: #fff;
+}
+
+.tentang-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  align-items: center;
+}
+
+.tentang-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.tentang-text p {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.social-links a {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  color: #555;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #0a66c2;
+}
+
+/* Skills */
+#skills {
+  background: #f0f2f5;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.skill-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  width: 140px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+}
+
+.skill-card img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+/* Projek */
+#projek {
+  background: #f0f2f5;
+}
+
+.projek-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.projek-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.projek-card:hover {
+  transform: translateY(-5px);
+}
+
+.projek-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.projek-info {
+  padding: 1.5rem;
+}
+
+.projek-info h3 {
+  color: #0a66c2;
+  margin-bottom: 0.5rem;
+}
+
+.projek-links a {
+  margin-right: 1rem;
+  font-weight: 500;
+  color: #0a66c2;
+}
+
+.projek-links a:hover {
+  text-decoration: underline;
+}
+
+/* Testimoni */
+#testimoni {
+  background: #fff;
+}
+
+.testimoni-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.testimoni-card {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.testimoni-card img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.testimoni-info h3 {
+  margin-bottom: 0.5rem;
+  color: #111;
+  font-size: 1.1rem;
+}
+
+.testimoni-info p {
+  font-style: italic;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* Kontak */
+#kontak {
+  background: #f0f2f5;
+  text-align: center;
+}
+
+.kontak-info {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.kontak-info ul {
+  list-style: none;
+  margin: 1.5rem 0;
+}
+
+.kontak-info li {
+  margin: 0.8rem 0;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: #ddd;
+  padding: 2rem 5%;
+  text-align: center;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: #ddd;
+  font-size: 0.95rem;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  font-size: 0.9rem;
+}
+
+.footer-bottom p {
+  margin: 0.3rem 0;
+  color: #bbb;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+  }
+
+  .nav-links {
+    gap: 1rem;
+    font-size: 0.95rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+}
